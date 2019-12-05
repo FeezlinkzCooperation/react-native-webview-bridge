@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alinz/react-native-webview-bridge.git"
+    "url": "git@github.com:mypthub/react-native-webview-bridge.git"
   },
   "keywords": [
     "react-native",
@@ -22,13 +22,14 @@
   ],
   "author": "Ali Najafizadeh",
   "contributors": [
-    "Hunter Medney"
+    "Hunter Medney",
+    "Gustavo Parreira"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alinz/react-native-webview-bridge/issues"
+    "url": "https://github.com/mypthub/react-native-webview-bridge/issues"
   },
-  "homepage": "https://github.com/alinz/react-native-webview-bridge",
+  "homepage": "https://github.com/mypthub/react-native-webview-bridge",
   "dependencies": {
     "create-react-class": "^15.6.0",
     "invariant": "^2.2.2",
