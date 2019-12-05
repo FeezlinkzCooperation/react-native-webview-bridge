@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mypthub/react-native-webview-bridge", :tag => "#{s.version}" }
   s.source_files  = "ios/**/*.{h,m}"
   s.dependency "React"
+  s.dependency "react-native-webview"
 end

@@ -28,7 +28,7 @@
 #define NSStringMultiline(...) [[NSString alloc] initWithCString:#__VA_ARGS__ encoding:NSUTF8StringEncoding]
 
 //we don'e need this one since it has been defined in RCTWebView.m
-//NSString *const RCTJSNavigationScheme = @"react-js-navigation";
+//NSString *const RNCJSNavigationScheme = @"react-js-navigation";
 NSString *const RCTWebViewBridgeSchema = @"wvb";
 
 // runtime trick to remove UIWebview keyboard default toolbar
@@ -224,7 +224,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 - (BOOL)webView:(__unused UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType
 {
-  BOOL isJSNavigation = [request.URL.scheme isEqualToString:RCTJSNavigationScheme];
+  BOOL isJSNavigation = [request.URL.scheme isEqualToString:RNCJSNavigationScheme];
 
   if (!isJSNavigation && [request.URL.scheme isEqualToString:RCTWebViewBridgeSchema]) {
     NSString* message = [webView stringByEvaluatingJavaScriptFromString:@"WebViewBridge.__fetch__()"];
