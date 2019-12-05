@@ -1,6 +1,6 @@
 {
   "name": "@mypthub/react-native-webview-bridge",
-  "version": "0.41.0",
+  "version": "0.41.1",
   "description": "React Native WebView Javascript Bridge",
   "main": "webview-bridge",
   "directories": {
